@@ -5,6 +5,13 @@ let vapidKeys = {
   }
 
   push.setVapidDetails('mailto:test@code.co.uk',vapidKeys.privateKey, vapidKeys.privateKey)
-  let sub={};
+  let sub= {
+    endpoint:
+    "https://fcm.googleapis.com/fcm/send/cNNckCJwMiY:APA91bGoD0AeROkzmQxB3f4lEWXYNoTMQBCsQ0WvNB-xsY4cmCGWUiZgWW8XdtUvLBytenJPT55L0nMI8Dk09fj49ufW11EA2wCOPt6eBrPJFXyWMbaYD02QKEsxb-CyJFLgTsjoeyJy",
+    expirationTime:null,
+  keys:{
+    p256dh:"BJ2nn1GHpU9x-D0VCC0SLuPTQXifo-9ov6Ze8eWGhoRyq11PEuARaPB76KYZMIZFEeac-xkLa8uIg8kep-TMsD4",
+    auth:"k0eY16mwMInwB_cy841ppQ"
+}};
   
   push.sendNotification(sub,'test message')
